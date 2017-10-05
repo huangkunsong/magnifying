@@ -1,0 +1,50 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+    margin: 0;
+    padding: 0;
+}aaa
+ body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+a{text-decoration:none;}
+/* 清除浮动 */
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.gallery{
+    margin:50px;
+    width : 400px;
+    height: 470px;
+    border: 1px solid #E8E8E8;
+    padding: 10px;
+}
+.gallery .mainPic, .gallery .mainPic img{
+    width: 400px;
+    height: 400px;
+}
+
+.gallery .imgs{
+    margin-top : 10px;
+    width: 400px;
+    height: 50px;
+}
+
+.gallery .imgs li{
+    float : left;
+    list-style-type: none;
+    margin-left: 16px;
+    cursor : pointer;
+    height:50px;
+    width:50px;
+    border : 1px solid white;
+}
+.gallery .imgs li:first-child{
+    margin-left : 5px;
+}
+.gallery .imgs li.current{
+    border : 1px solid red;
+}
+
+.gallery .imgs li img{
+    width: 50px;
+    height: 50px;
+}
